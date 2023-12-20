@@ -1,5 +1,5 @@
-let cMode = '0';
-var dateFormat = 'D';
+let cMode = '1';
+var dateFormat = 'DDD';
 var timeDisplayMethod = 0;
 
 // Page duration elements
@@ -58,7 +58,7 @@ function updateTime() {
     const sec = time.toFormat('ss');
     const ind = cMode === '0' ? time.toFormat('a') : '';
 
-    document.title = `Time: ${hrs}:${min}:${sec} ${ind}`;
+    document.title = `האם זה הזמן לפוליטיקה`;
     updateFavicon(time.toFormat('h'));
     
     // Seconds progress bar
