@@ -14,9 +14,7 @@ body {
 /* Clock CSS */
 #clock-container {
     font-size: 10vw;
-    font-weight: normal;
-    white-space: nowrap;
-    float: left;
+    font-weight: normal; 
     display: inline-block;
 }
 
