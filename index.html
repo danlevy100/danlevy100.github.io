@@ -1,6 +1,37 @@
 <!doctype html>
 <html lang="en" class="prevent-selection">
     <head>
+
+<style>
+    /* Custom styles */
+    body {
+      padding-top: 60px; /* Adjust the value as needed for the spacing from the top */
+    }
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .flash-text {
+      position: relative;
+      display: inline-block;
+      animation: flash 2s infinite; /* Adjust the duration as needed */
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      right: -10px; /* Adjust the distance from the text */
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      transform: translate(0, -50%);
+    }
+  </style>
+        
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMLZ242S14"></script>
         <script>
@@ -48,11 +79,13 @@
         <!-- Favicon -->
         <link rel="icon" type="image/svg+xml" id="favicon" href="./icons/clock-time-12.svg">
     </head>
+    
+    
     <body>
 
         <div class="container mt-4"> <!-- Use the 'mt-4' class for margin-top spacing -->
           <h1 class="display-4" align="center">?האם עכשיו זה הזמן</h1>
-          <p class="lead">Subheadline or additional information can go here.</p>
+          <p class="lead flash-text" align="center"><span class="dot"></span>עמוד מתעדכן</p>
         </div>        
         
         <div id="blur-panel"></div>
