@@ -13,14 +13,13 @@ body {
 
 /* Clock CSS */
 #clock-container {
-    font-size: 10vw;
+    font-size: 6vw;
     font-weight: normal; 
-    display: inline-block;
     text-align: center;
 }
 
 #indicator {
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 
 #date {
