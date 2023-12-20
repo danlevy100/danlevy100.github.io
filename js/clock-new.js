@@ -1,5 +1,5 @@
 let cMode = '1';
-var dateFormat = 'DDD';
+var dateFormat = 'dd-mm-yyyy';
 var timeDisplayMethod = 0;
 
 // Page duration elements
