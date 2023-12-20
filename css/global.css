@@ -19,7 +19,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    float: left;
+    float: none;
     display: inline-block;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 #date {
-    font-size: 8.5vw;
+    font-size: 4vw;
     padding-top: 5px;
 }
 
