@@ -13,7 +13,7 @@ body {
 
 /* Clock CSS */
 #clock-container {
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: normal; 
     text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #date {
-    font-size: 6vw;
+    font-size: 4vw;
     padding-top: 5px;
 }
 
