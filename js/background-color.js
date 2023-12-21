@@ -88,4 +88,4 @@ menu.presetcolors.forEach((radio) => {
 });
 
 // Start color fade on page load
-startColorFade();
+// startColorFade();
