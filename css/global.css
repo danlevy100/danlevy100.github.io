@@ -4,6 +4,7 @@
 
 body {
     background-repeat: no-repeat;
+  padding-top: 10px; /* Adjust the value as needed for the spacing from the top */
 }
 
 #blur-panel {
@@ -26,25 +27,6 @@ body {
     font-size: 4vw;
     padding-top: 5px;
 }
-
-/* Menu CSS */
-#menu-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-    display: none;
-}
-
-.menu-options-hide {
-    display: none;
-}
-
-.menu-options-show {
-    &::-webkit-scrollbar {
-    width: 8px;
-    display: none;
-    }
 
     &::-webkit-scrollbar-thumb {
     background-color: #888;
@@ -82,13 +64,43 @@ body {
     font-weight: bold;
 }
 
-/* Seconds progress bar */
-#seconds-progress-bar {
-  position: absolute;
-  bottom: 1;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #212529;
-  display: none; /* Disable display by default */
-  transition: width 1.0s;
-}
+    .extra-large {
+        font-size: 7rem;
+    }  
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .flash-text {
+      position: relative;
+      display: inline-block;
+      animation: flash 2s infinite; /* Adjust the duration as needed */
+      text-align: center;
+      color: red;
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: -15px; /* Adjust the distance from the text */
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      transform: translate(0, -50%);
+    }
+
+     .center-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;     
+    }
+
+    .social-button {
+      margin: 10px; /* Adjust the spacing between buttons */
+      display: inline-flex; /* Align buttons horizontally */
+      align-items: center;
+    }
